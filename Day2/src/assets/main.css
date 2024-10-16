@@ -1,0 +1,15 @@
+.boxes {
+  text-align: center;
+  background-color: antiquewhite;
+}
+.boxes2 {
+  text-align: center;
+  background-color: rgb(134, 137, 200);
+}
+
+.header {
+  text-align: center;
+  background-color: rgb(162, 180, 107);
+  color: black;
+  text-shadow: transparent;
+}
