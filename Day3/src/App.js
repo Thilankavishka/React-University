@@ -6,29 +6,20 @@ const fruit = ["apple", "orange", "graph", "woodapple"];
 
 function App() {
   const [count, setCount] = useState(0);
-  const [arr, setArr] = useState(fruit[0]);
 
   function nextElement() {
-    if (count === fruit.length - 1) {
+    if (count > fruit.length - 2) {
       setCount(0);
     } else {
       setCount(count + 1);
     }
-
-    setArr(fruit[count]);
   }
-
   function previousElement() {
-    let c;
-    if (count === 0) {
-      c = fruit.length - 1;
-      setCount(c);
+    if (count < 1) {
+      setCount(fruit.length - 1);
     } else {
-      c = count - 1;
-      setCount(c);
+      setCount(count - 1);
     }
-
-    setArr(fruit[c]);
   }
   return (
     <>
@@ -42,7 +33,7 @@ function App() {
       </div>
       <hr></hr>
       <div>
-        <h1>{arr}</h1>
+        <h1>{fruit[count]}</h1>
         <button onClick={previousElement}>Previous Element</button>
 
         <button onClick={nextElement}>Next Element</button>
