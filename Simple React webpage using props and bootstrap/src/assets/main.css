@@ -1,0 +1,30 @@
+.title {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 25px;
+}
+
+img {
+  width: 400px;
+  height: 400px;
+}
+
+.nav-buttons {
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.nav-buttons button {
+  border-radius: 0;
+}
+
+.artist-name {
+  width: 500px;
+}
